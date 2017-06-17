@@ -4,7 +4,7 @@ COPY docker-entrypoint.sh /
 
 RUN apk update && \
     apk add --no-cache su-exec && \
-    apk add --no-cache squid=3.5.23-r0 acf-squid && \
+    apk add --no-cache squid=3.5.23-r0 && \
     mkdir -p /var/cache/squid && \
     chmod +x /docker-entrypoint.sh
 
